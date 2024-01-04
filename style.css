@@ -4,34 +4,37 @@ body {
   color: #333;
   font-family: "Lato", sans-serif;
 }
-.aaa {
+.plan-matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.aaa img {
+.plan-matrix img {
   width: 100%;
 }
-.aaa .aaa__more-inf {
+.plan-matrix .plan-matrix__link {
   font-family: "Fantasy", cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.plan-matrix { text-align: center;
 }
 }
-.centered-main-page-element {
+.plan-content {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
-.centered-main-page-element__task {
+.add-item-form__input,
+.check-plan-list-item__title,
+.plan-list-item__input,
+.plan-list-completed__title {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.centered-main-page-element__task-row-wrapper {
+.add-item-form__wrapper {
   display: flex;
 }
 ul {
@@ -58,7 +61,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="centered-main-page-element__new-task"] {
+label[for="add-item-form__title"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,11 +87,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="centered-main-page-element__new-task"] {
+label[for="add-item-form__title"] {
   display: block;
   margin: 0 0 20px;
 }
-input#centered-main-page-element__new-task {
+input#add-item-form__title {
   width: 318px;
 }
 
@@ -118,17 +121,21 @@ li > label {
 li >    input[type="text"] {
   width: 226px
 }
-button.centered-main-page-element__delete img {
+button.check-plan-list-item__delete-button img,
+.plan-list-item__delete-button img,
+.plan-list-completed__delete-button img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.centered-main-page-element__delete img:hover {
+button.check-plan-list-item__delete-button img:hover,
+.plan-list-item__delete-button img:hover,
+.plan-list-completed__delete-button img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#centered-main-page-element__completed-tasks label {
+ul#plan-list-completed label {
   text-decoration: line-through
   color: #888;
 }
@@ -138,11 +145,11 @@ ul li input[type="text"] {
   display:none
 }
 
-ul li.centered-main-page-element__edit-mode input[type="text"] {
+ul li.plan-list-item input[type="text"] {
   display:inline-block;
   width:224px
 }
 
-ul li.centered-main-page-element__edit-mode label {
+ul li.plan-list-item label {
   display:none;
 }
