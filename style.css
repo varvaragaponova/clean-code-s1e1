@@ -26,7 +26,7 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.add-item-form__input,
+.add-item__input,
 .check-plan-list-item__title,
 .plan-list-item__input,
 .plan-list-completed__title {
@@ -34,7 +34,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.add-item-form__wrapper {
+.add-item__wrapper {
   display: flex;
 }
 ul {
@@ -61,7 +61,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for="add-item-form__title"] {
+label[for="add-item__title"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,11 +87,11 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="add-item-form__title"] {
+label[for="add-item__title"] {
   display: block;
   margin: 0 0 20px;
 }
-input#add-item-form__title {
+input#add-item__title{
   width: 318px;
 }
 
