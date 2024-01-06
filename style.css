@@ -45,16 +45,16 @@
 }
 
 .plan-list,.plan-list-completed {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .check-plan-list-item,.plan-list-item,.plan-list-completed-item,.title {
-  list-style:none;
+  list-style: none;
 }
 
 .add-item__input,.add-item__button,.check-plan-list-item__input,.check-plan-list-item__save-button,.check-plan-list-item__delete-button,.plan-list-item__input,.plan-list-item__save-button,.plan-list-item__delete-button,.plan-list-completed-item__input,.plan-list-completed-item__save-button,.plan-list-completed-item__delete-button{
-  outline:none;
+  outline: none;
 }
 
 .add-item__button,.check-plan-list-item__save-button,.check-plan-list-item__delete-button,.plan-list-item__save-button,.plan-list-item__delete-button,.plan-list-completed-item__save-button,.plan-list-completed-item__delete-button {
@@ -159,14 +159,14 @@
 
 /* Edit Task */
 .plan-list-completed-item__input,.plan-list-item__input,.check-plan-list-item__input {
-  display:none
+  display: none
 }
 
 .plan-list-item__input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .plan-list-item__title {
-  display:none;
+  display: none;
 }
