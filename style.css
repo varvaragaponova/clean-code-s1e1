@@ -4,28 +4,34 @@
   color: #333;
   font-family: "Lato", sans-serif;
 }
+
 .plan-matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .plan-matrix__img {
   width: 100%;
 }
+
 .plan-matrix .plan-matrix__link {
   font-family: "Fantasy", cursive;
 }
 
 @media (max-width:768px) {
-.plan-matrix { text-align: center;
+  .plan-matrix {
+    text-align: center;
+  }
 }
-}
+
 .plan-content {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .add-item__input,.check-plan-list-item__title,
 .plan-list-item__input,
 .plan-list-completed-item__title {
@@ -33,19 +39,24 @@
   display: inline-block;
   flex-grow: 1
 }
+
 .add-item__wrapper {
   display: flex;
 }
+
 .plan-list,.plan-list-completed {
   margin:0;
   padding: 0px;
 }
+
 .check-plan-list-item,.plan-list-item,.plan-list-completed-item,.title {
   list-style:none;
 }
+
 .add-item__input,.add-item__button,.check-plan-list-item__input,.check-plan-list-item__save-button,.check-plan-list-item__delete-button,.plan-list-item__input,.plan-list-item__save-button,.plan-list-item__delete-button,.plan-list-completed-item__input,.plan-list-completed-item__save-button,.plan-list-completed-item__delete-button{
   outline:none;
 }
+
 .add-item__button,.check-plan-list-item__save-button,.check-plan-list-item__delete-button,.plan-list-item__save-button,.plan-list-item__delete-button,.plan-list-completed-item__save-button,.plan-list-completed-item__delete-button {
   background: none;
   border: 0px;
@@ -55,9 +66,11 @@
   font-family: "Lato", sans-serif;
   cursor: pointer;
 }
+
 .add-item__button:hover,.check-plan-list-item__save-button:hover,.check-plan-list-item__delete-button:hover,.plan-list-item__save-button:hover,.plan-list-item__delete-button:hover,.plan-list-completed-item__save-button:hover,.plan-list-completed-item__delete-button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .title,
 .add-item__title {
@@ -69,6 +82,7 @@
   margin: 0;
   text-transform: uppercase;
 }
+
 .add-item__input,.check-plan-list-item__input,.plan-list-item__input,.plan-list-completed-item__input {
   margin: 0;
   font-size: 18px;
@@ -81,6 +95,7 @@
   font-family: "Lato", sans-serif;
   color: #888;
 }
+
 .add-item__input:focus,.check-plan-list-item__input:focus,.plan-list-item__input:focus,.plan-list-completed-item__input:focus {
   color: #333;
 }
@@ -90,6 +105,7 @@
   display: block;
   margin: 0 0 20px;
 }
+
 .add-item__input{
   width: 318px;
 }
@@ -109,15 +125,18 @@
 .check-plan-list-item__input-check,.plan-list-item__check,.plan-list-completed-item__input {
   margin: 0 10px;
 }
+
 .check-plan-list-item__title,.plan-list-item__title,.plan-list-completed-item__title {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .check-plan-list-item__input,.plan-list-item__input,.plan-list-completed-item__input {
   width: 226px
 }
+
 .check-plan-list-item__delete-img,
 .plan-list-item__delete-img,
 .plan-list-completed__delete-img {
@@ -125,6 +144,7 @@
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .check-plan-list-item__delete-img:hover,
 .plan-list-item__delete-img:hover,
 .plan-list-completed__delete-img:hover {
