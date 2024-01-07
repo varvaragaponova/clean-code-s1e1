@@ -32,7 +32,8 @@
   margin: 0 auto 0;
 }
 
-.add-item__input,.check-plan-list-item__title,
+.add-item__input,
+.check-plan-list-item__title,
 .plan-list-item__input,
 .plan-list-completed-item__title {
   width: 56%;
@@ -44,20 +45,40 @@
   display: flex;
 }
 
-.plan-list,.plan-list-completed {
+#plan-list,
+#plan-list-completed {
   margin: 0;
   padding: 0px;
 }
 
-.check-plan-list-item,.plan-list-item,.plan-list-completed-item,.title {
+.check-plan-list-item,
+.plan-list-item,
+.plan-list-completed-item,
+.title {
   list-style: none;
 }
 
-.add-item__input,.add-item__button,.check-plan-list-item__input,.check-plan-list-item__save-button,.check-plan-list-item__delete-button,.plan-list-item__input,.plan-list-item__save-button,.plan-list-item__delete-button,.plan-list-completed-item__input,.plan-list-completed-item__save-button,.plan-list-completed-item__delete-button{
+.add-item__input,
+.add-item__button,
+.check-plan-list-item__input,
+.check-plan-list-item__save-button,
+.check-plan-list-item__delete-button,
+.plan-list-item__input,
+.plan-list-item__save-button,
+.plan-list-item__delete-button,
+.plan-list-completed-item__input,
+.plan-list-completed-item__save-button,
+.plan-list-completed-item__delete-button {
   outline: none;
 }
 
-.add-item__button,.check-plan-list-item__save-button,.check-plan-list-item__delete-button,.plan-list-item__save-button,.plan-list-item__delete-button,.plan-list-completed-item__save-button,.plan-list-completed-item__delete-button {
+.add-item__button,
+.check-plan-list-item__save-button,
+.check-plan-list-item__delete-button,
+.plan-list-item__save-button,
+.plan-list-item__delete-button,
+.plan-list-completed-item__save-button,
+.plan-list-completed-item__delete-button {
   background: none;
   border: 0px;
   color: #888;
@@ -67,7 +88,13 @@
   cursor: pointer;
 }
 
-.add-item__button:hover,.check-plan-list-item__save-button:hover,.check-plan-list-item__delete-button:hover,.plan-list-item__save-button:hover,.plan-list-item__delete-button:hover,.plan-list-completed-item__save-button:hover,.plan-list-completed-item__delete-button:hover {
+.add-item__button:hover,
+.check-plan-list-item__save-button:hover,
+.check-plan-list-item__delete-button:hover,
+.plan-list-item__save-button:hover,
+.plan-list-item__delete-button:hover,
+.plan-list-completed-item__save-button:hover,
+.plan-list-completed-item__delete-button:hover {
   color: #3a3a3a;
 }
 
@@ -83,7 +110,10 @@
   text-transform: uppercase;
 }
 
-.add-item__input,.check-plan-list-item__input,.plan-list-item__input,.plan-list-completed-item__input {
+.add-item__input,
+.check-plan-list-item__input,
+.plan-list-item__input,
+.plan-list-completed-item__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -96,7 +126,10 @@
   color: #888;
 }
 
-.add-item__input:focus,.check-plan-list-item__input:focus,.plan-list-item__input:focus,.plan-list-completed-item__input:focus {
+.add-item__input:focus,
+.check-plan-list-item__input:focus,
+.plan-list-item__input:focus,
+.plan-list-completed-item__input:focus {
   color: #333;
 }
 
@@ -111,7 +144,9 @@
 }
 
 /* Task list */
-.check-plan-list-item,.plan-list-item,.plan-list-completed-item {
+.check-plan-list-item,
+.plan-list-item,
+.plan-list-completed-item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,18 +157,24 @@
   vertical-align: middle;
 }
 
-.check-plan-list-item__input-check,.plan-list-item__check,.plan-list-completed-item__input {
+.check-plan-list-item__input-check,
+.plan-list-item__check,
+.plan-list-completed-item__input {
   margin: 0 10px;
 }
 
-.check-plan-list-item__title,.plan-list-item__title,.plan-list-completed-item__title {
+.check-plan-list-item__title,
+.plan-list-item__title,
+.plan-list-completed-item__title {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.check-plan-list-item__input,.plan-list-item__input,.plan-list-completed-item__input {
+.check-plan-list-item__input,
+.plan-list-item__input,
+.plan-list-completed-item__input {
   width: 226px;
 }
 
@@ -158,7 +199,9 @@
 }
 
 /* Edit Task */
-.plan-list-completed-item__input,.plan-list-item__input,.check-plan-list-item__input {
+.plan-list-completed-item__input,
+.plan-list-item__input,
+.check-plan-list-item__input {
   display: none;
 }
 
