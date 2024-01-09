@@ -6,12 +6,12 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body class="body">
-  <header class="plan-matrix">
-    <img src="./eisenhower-matrix.jpg" class="plan-matrix__img" alt="eisenhower matrix">
-    <a class="plan-matrix__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  <header class="todo-matrix">
+    <img src="./eisenhower-matrix.jpg" class="todo-matrix__img" alt="the eisenhower matrix">
+    <a class="todo-matrix__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </header>
-  <main class="plan-content">
-    <section id="add-item">
+  <main class="todo-content">
+    <section class="add-item">
       <p class="add-item__title">Add Item</p>
       <div class="add-item__wrapper">
         <input class="add-item__input" type="text">
@@ -20,37 +20,37 @@
     </section>
     <section>
       <h3 class="title">Todo</h3>
-      <ul id="plan-list">
-        <li class="check-plan-list-item">
-          <input type="checkbox" class="check-plan-list-item__input-check">
-          <label class="check-plan-list-item__title" for="item-text">Pay Bills</label>
-          <input id="item-text" type="text" class="check-plan-list-item__input">
-          <button class="check-plan-list-item__save-button">Edit</button>
-          <button class="check-plan-list-item__delete-button">
-            <img src="./remove.svg" class="check-plan-list-item__delete-img" alt="delete">
+      <ul class="todo">
+        <li class="todo-item todo-item_checked">
+          <input type="checkbox" class="todo-item__input-check todo-item_checked">
+          <label class="todo-item__title todo-item_checked" for="item-text">Pay Bills</label>
+          <input type="text" class="todo-item__input todo-item_checked" id="item-text">
+          <button class="todo-item__save-button">Edit</button>
+          <button class="todo-item__delete-button">
+            <img src="./remove.svg" class="todo-item__delete-img" alt="delete">
           </button>
         </li>
-        <li class="plan-list-item">
-          <input type="checkbox"  class="plan-list-item__check">
-          <label class="plan-list-item__title" for="item-content">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="plan-list-item__input" id="item-content">
-          <button class="plan-list-item__save-button">Save</button>
-          <button class="plan-list-item__delete-button">
-            <img src="./remove.svg" class="plan-list-item__delete-img" alt="delete">
+        <li class="todo-item">
+          <input type="checkbox"  class="todo-item__check">
+          <label class="todo-item__title" for="item-content">Go Shopping</label>
+          <input id="item-content" type="text" value="Go Shopping" class="todo-item__input">
+          <button class="todo-item__save-button">Save</button>
+          <button class="todo-item__delete-button">
+            <img src="./remove.svg" class="todo-item__delete-img" alt="delete">
           </button>
         </li>
       </ul>
     </section>
     <section>
       <h3 class="title">Completed</h3>
-      <ul id="plan-list-completed">
-        <li class="plan-list-completed-item">
-          <input type="checkbox" class="plan-list-completed-item__input-check" checked>
-          <label class="plan-list-completed-item__title" for="item-check">See the Doctor</label>
-          <input id="item-check" type="text" class="plan-list-completed-item__input">
-          <button class="plan-list-completed-item__save-button">Edit</button>
-          <button class="plan-list-completed-item__delete-button">
-            <img src="./remove.svg" class="plan-list-completed__delete-img" alt="delete">
+      <ul class="todo todo_done">
+        <li class="todo-item todo-item_completed">
+          <input type="checkbox" class="todo-item__input-check todo-item_completed" checked>
+          <label class="todo-item__title todo-item_completed" for="item-check">See the Doctor</label>
+          <input id="item-check" type="text" class="todo-item__input todo-item_completed">
+          <button class="todo-item__save-button">Edit</button>
+          <button class="todo-item__delete-button">
+            <img src="./remove.svg" class="todo-item__delete-img" alt="delete">
           </button>
         </li>
       </ul>
