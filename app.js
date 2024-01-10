@@ -43,7 +43,7 @@ var createNewTaskElement = function (taskString) {
 
   deleteButton.className = "todo-item__delete-button";
   deleteButtonImg.className = "todo-item__delete-img";
-  deleteButton.setAttribute("alt", "");
+  deleteButtonImg.setAttribute("alt", "delete");
   deleteButtonImg.src = "./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
 
@@ -150,7 +150,10 @@ var taskIncomplete = function () {
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
 
-  if (title.classList.contains("todo-item_completed") && input.classList.contains("todo-item_completed")) {
+  if (
+    title.classList.contains("todo-item_completed") &&
+    input.classList.contains("todo-item_completed")
+  ) {
     input.classList.remove("todo-item_completed");
     title.classList.remove("todo-item_completed");
 
@@ -160,8 +163,10 @@ var taskIncomplete = function () {
     return;
   }
 
-  if (!listItem.classList.contains("todo-item_completed") &&
-    !listItem.classList.contains("todo-item_checked")) {
+  if (
+    !listItem.classList.contains("todo-item_completed") &&
+    !listItem.classList.contains("todo-item_checked")
+  ) {
     return;
   }
 
